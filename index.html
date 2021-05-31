@@ -1,13 +1,54 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css"/>
-        
-    <tittle>Shipping Estimator</tittle>
+<meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css"/> 
+        <title>My Project</title>
 </head>
 <body>
+        <h1> Luke's Crypto Finder</h1>
+        <h2>Search</h2>
+
+        <div class="row">
+          <div class="column" style="background-color:lightblue">
+            <h2>Buy Price</h2>
+            <h4>Enter a crypto ticker symbol to find the current buy price</h4>
+                <form id="coin-form" action="">
+                    
+                    <input type='text' name="coin" id="coin-input" size="25" placeholder="Ticker Symbol"><button id='submit'>Search</button>
+                </form> 
+                    <ul id="coin-list">
+                    </ul>
+            
+    </div>
+        <div class="column" style="background-color:lightgoldenrodyellow;">
+            <h2>Spot Price</h2>
+                <h4>Enter a crypto ticker symbol and date to search for a coin price</h4>
+                    <form id="spot-form" action="">
+                    <label for="spot-form"></label>
+                        <input type="text" id ="coin" name="coins-search" placeholder="Ticker Symbol">
+                        <input  id="date-input" name="currency-choice" placeholder="YYYY-MM-DD" /><button id='submit'>Search</button>
+                    </form>  
+            <ul id="spot-list">
+            
+            </ul>
+        </div>
+    </div>
+
+        <ul id="currency-list">
+
+        </ul>
+        <div>
+            <h4>Currancy Conversion From USD to:</h4> 
+            <input type="text" id="fetchList" placeholder="Select one..."  list="datalist"/>
+            <datalist id="datalist"></datalist>
+            Results show 1 USD to currency selected 
+        </div>
+        <ul id="last-list">
+
+        </ul>
 
 <script src="src/index.js"></script>
 </body>
